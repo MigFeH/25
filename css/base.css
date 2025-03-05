@@ -1,0 +1,77 @@
+/* 
+.first-color { 
+	background: #fffafa; 
+}
+	
+.second-color { 
+	background: #ffe0e0; 
+}
+
+.third-color { 
+	background: #ffc0d0; 
+}
+
+.fourth-color { 
+	background: #efdfbf; 
+*/
+
+h1
+{
+    text-align: center;
+}
+
+div
+{
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+
+    margin: auto;
+
+    width: 90vw;
+    height: 50vh;
+}
+
+.impar
+{
+    background: #ffe0e0;
+}
+
+.par 
+{
+    flex-direction: row-reverse;
+    background: #ffc0d0;
+}
+
+@keyframes slide-top {
+    0% {
+        position: relative;
+        top: 50px;
+    }
+    100% {
+        position: relative;
+        top: 0px;
+    }
+  }
+  
+.mostrar {
+    animation-name: slide-top;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    animation-fill-mode: both;
+}
+
+img
+{
+    width: 50%;
+    height: 50%;
+    animation: mostrar 1s;
+}
+
+video
+{
+    width: 50%;
+    height: 50%;
+    animation: mostrar 1s;
+}
